@@ -1,2 +1,2 @@
 # ci-drill
-CI drill playground: rehearse canceling and re-running a stuck GitHub Actions job
+Deliberate CI failure drill for the on-call demo.
