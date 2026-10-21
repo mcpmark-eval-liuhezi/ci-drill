@@ -1,0 +1,6 @@
+name: drill
+on: workflow_dispatch
+jobs:
+  boom:
+    runs-on: ubuntu-latest
+    steps: [{run: "exit 1"}]
