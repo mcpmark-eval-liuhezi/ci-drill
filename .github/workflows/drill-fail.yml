@@ -1,0 +1,15 @@
+name: drill-fail
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliberately exit non-zero (intentional red build)
+        run: |
+          echo "ci-drill: this step intentionally fails as part of the quarterly incident drill"
+          exit 1
